@@ -1,0 +1,28 @@
+@mixin dot($b-color) {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: $b-color;
+
+  display: inline-block;
+}
+
+.l-dot-red {
+  @include dot(var(--l-red));
+}
+
+.l-dot-blue {
+  @include dot(var(--l-blue));
+}
+
+.l-dot-green {
+  @include dot(var(--l-green));
+}
+
+.l-dot-yellow {
+  @include dot(var(--l-yellow));
+}
+
+.l-dot-light {
+  @include dot(var(--l-light));
+}

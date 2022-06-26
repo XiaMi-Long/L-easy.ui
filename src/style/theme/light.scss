@@ -1,0 +1,28 @@
+@mixin light-theme {
+  /* 红色 */
+  --l-red: #e1263f;
+  /* 绿色 */
+  --l-green: #3eba52;
+  /* 黄色 */
+  --l-yellow: #ebb33b;
+  /* 白色 */
+  --l-light: #f6f6f4;
+  /* 黄色 */
+  --l-dark: #1c1c1b;
+  /* 蓝色 */
+  --l-blue: #0c9af0;
+
+  /* BUTTON */
+  /* 所有按钮的文字颜色（除默认按钮） */
+  --button-text-color: white;
+  /* 默认样式按钮的文字颜色 */
+  --button-default-text-color: black;
+
+  /* CODE */
+  /* code组件颜色 */
+  --l-code-grey: #bcc2c6;
+  /* code组件边框颜色 */
+  --l-code-border-color: #0c9af0;
+  /* code组件文字颜色 */
+  --l-code-text-color: #000000;
+}

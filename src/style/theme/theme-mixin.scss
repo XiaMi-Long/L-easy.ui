@@ -1,0 +1,35 @@
+@import "./light";
+@import "./dark";
+
+@mixin theme {
+  &[data-theme="light"] {
+    @include light-theme();
+  }
+  &[data-theme="dark"] {
+    @include dark-theme();
+  }
+  .l-red {
+    background-color: var(--l-red);
+  }
+  .l-green {
+    background-color: var(--l-green);
+  }
+  .l-yellow {
+    background-color: var(--l-yellow);
+  }
+  .l-light {
+    background-color: var(--l-light);
+  }
+  .l-dark {
+    background-color: var(--l-dark);
+  }
+  .l-blue {
+    background-color: var(--l-blue);
+  }
+  .l-grey {
+    background-color: var(--l-grey);
+  }
+  .l-navy-blue {
+    background-color: var(--l-navy-blue);
+  }
+}

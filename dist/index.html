@@ -4,10 +4,10 @@
  * @Author: wwy
  * @Date: 2022-06-23 17:12:36
  * @LastEditors: wwy
- * @LastEditTime: 2022-06-23 18:01:40
+ * @LastEditTime: 2022-06-26 15:00:44
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -15,11 +15,199 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="main.js"></script>
 </head>
 
+<style>
+  body {
+    height: 2000px;
+  }
+
+  h2 {
+    color: var(--l-light)
+  }
+
+  .demo-container {
+    padding: 20px;
+  }
+
+  .color-round {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 30px;
+  }
+
+  .color-round-item {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  .btn-box {
+    margin: 20px 0;
+  }
+</style>
+
 <body>
-  12
+  <h2>1. 配色</h2>
+  <div class="demo-container">
+    <div class="color-round">
+      <div class="color-round-item l-red"></div>
+      <span class="l-red">红色</span>
+    </div>
+    <div class="color-round">
+      <div class="color-round-item l-blue"></div>
+      <span class="l-blue">蓝色</span>
+    </div>
+    <div class="color-round">
+      <div class="color-round-item l-green"></div>
+      <span class="l-green">绿色</span>
+    </div>
+    <div class="color-round">
+      <div class="color-round-item l-light"></div>
+      <span class="l-light">白色</span>
+    </div>
+    <div class="color-round">
+      <div class="color-round-item l-yellow"></div>
+      <span class="l-yellow">黄色</span>
+    </div>
+    <div class="color-round">
+      <div class="color-round-item l-dark"></div>
+      <span class="l-dark">黑色</span>
+    </div>
+
+  </div>
+  <h2>2. 按钮</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <button class="l-btn" type="button">默认的按钮</button>
+      <button class="l-btn" type="button"
+        data-type="primary">蓝色的按钮</button>
+      <button class="l-btn" type="button"
+        data-type="yellow">黄色的按钮</button>
+      <button class="l-btn" type="button"
+        data-type="green">绿色的按钮</button>
+      <button class="l-btn" type="button"
+        data-type="red">红色的按钮</button>
+    </div>
+  </div>
+  <h2>3. 禁用按钮</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <button class="l-btn" type="button" disabled>默认的按钮</button>
+      <button class="l-btn " disabled type="button"
+        data-type="primary">蓝色的按钮</button>
+      <button class="l-btn" type="button" disabled
+        data-type="yellow">黄色的按钮</button>
+      <button class="l-btn" type="button" disabled
+        data-type="green">绿色的按钮</button>
+      <button class="l-btn" type="button" disabled
+        data-type="red">红色的按钮</button>
+    </div>
+  </div>
+  <h2>3. div按钮、label按钮、a标签按钮</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <div class="l-btn">默认的div按钮</div>
+      <div class="l-btn " data-type="primary">蓝色的div按钮</div>
+      <div class="l-btn" data-type="yellow">黄色div的按钮</div>
+    </div>
+    <br>
+    <div class="btn-box">
+      <label class="l-btn">默认label的按钮</label>
+      <label class="l-btn " data-type="primary">蓝色label的按钮</label>
+      <label class="l-btn" data-type="yellow">黄色label的按钮</label>
+    </div>
+    <br>
+    <div class="btn-box">
+      <a class="l-btn" href="#">默认a的按钮</a>
+      <a class="l-btn " href="#" data-type="primary">蓝色a的按钮</a>
+      <a class="l-btn" href="#" data-type="yellow">黄色a的按钮</a>
+    </div>
+  </div>
+  <h2>4. 边框按钮</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <button class="l-btn l-btn-border" type="button">默认的按钮</button>
+      <button class="l-btn l-btn-border" type="button"
+        data-type="primary">蓝色的按钮</button>
+      <button class="l-btn l-btn-border" type="button"
+        data-type="yellow">黄色的按钮</button>
+      <button class="l-btn l-btn-border" type="button"
+        data-type="green">绿色的按钮</button>
+      <button class="l-btn l-btn-border" type="button"
+        data-type="red">红色的按钮</button>
+    </div>
+  </div>
+  <h2>5. 按钮尺寸</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <button class="l-btn l-btn-lg" type="button"
+        data-type="primary">大型按钮</button>
+      <button class="l-btn" type="button"
+        data-type="primary">默认大小</button>
+      <button class="l-btn l-btn-sm" type="button"
+        data-type="primary">小型大小</button>
+      <button class="l-btn l-btn-xs" type="button"
+        data-type="primary">迷你</button>
+    </div>
+  </div>
+  <h2>6. 圆角按钮</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <button class="l-btn l-btn-radius" type="button">默认的按钮</button>
+      <button class="l-btn l-btn-radius" type="button"
+        data-type="primary">蓝色的按钮</button>
+      <button class="l-btn l-btn-radius" type="button"
+        data-type="yellow">黄色的按钮</button>
+      <button class="l-btn l-btn-radius" type="button"
+        data-type="green">绿色的按钮</button>
+      <button class="l-btn l-btn-radius" type="button"
+        data-type="red">红色的按钮</button>
+    </div>
+  </div>
+  <h2>7. 小圆点</h2>
+  <div class="demo-container">
+    <div class="btn-box" style="color: white;">
+      <div>
+        <div class="l-dot-red"></div>
+        这是红色的小圆点
+      </div>
+      <div>
+        <div class="l-dot-blue"></div>
+        这是蓝色的小圆点
+      </div>
+      <div>
+        <div class="l-dot-green"></div>
+        这是绿色的小圆点
+      </div>
+      <div>
+        <div class="l-dot-yellow"></div>
+        这是黄色的小圆点
+      </div>
+      <div>
+        <div class="l-dot-light"></div>
+        这是白色的小圆点
+      </div>
+    </div>
+  </div>
+  <h2>8. 代码区域</h2>
+  <div class="demo-container">
+    <div class="btn-box">
+      <code class="l-code">
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        border-radius: 50%;
+      </code>
+    </div>
+  </div>
+
+  <button class="l-btn" id="dark" type="button"
+    data-type="primary">点击变为黑主题</button>
+  <script src="main.js"></script>
 </body>
 
 </html>

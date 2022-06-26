@@ -1,0 +1,94 @@
+/**
+ * @name: wwy
+ * @msg: 按钮的基本样式
+ * @param border-color 边框的颜色
+ * @param text-color 文字的颜色
+ * @param
+ * @return {*}
+ */
+.l-btn {
+  font-size: 14px;
+  min-width: 50px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  padding: 9px 15px;
+  cursor: pointer;
+  border-radius: $button-radius;
+  border: 1px solid var(--l-light);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  overflow: visible;
+  background-color: var(--l-light);
+  color: var(--button-default-text-color);
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+
+  &:active {
+    filter: brightness(0.9);
+  }
+
+  &[disabled] {
+    opacity: 0.4;
+    cursor: no-drop;
+    // 禁止tab聚焦
+    // pointer-events: none;
+    filter: brightness(1.1);
+  }
+
+  &[data-type="primary"] {
+    color: var(--button-text-color);
+    border: 1px solid var(--l-blue);
+    background-color: var(--l-blue);
+  }
+
+  &[data-type="yellow"] {
+    color: var(--button-text-color);
+    border: 1px solid var(--l-yellow);
+    background-color: var(--l-yellow);
+  }
+
+  &[data-type="green"] {
+    color: var(--button-text-color);
+    border: 1px solid var(--l-green);
+    background-color: var(--l-green);
+  }
+
+  &[data-type="red"] {
+    color: var(--button-text-color);
+    border: 1px solid var(--l-red);
+    background-color: var(--l-red);
+  }
+}
+
+.l-btn-border {
+  background-color: #f1f1f100 !important;
+}
+
+.l-btn-lg {
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 25px;
+}
+
+.l-btn-sm {
+  font-size: 12px;
+  height: 32px;
+  padding: 0px 10px;
+  line-height: 32px;
+}
+
+.l-btn-xs {
+  height: 22px;
+  line-height: 22px;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+.l-btn-radius {
+  border-radius: 20px;
+}

@@ -1,6 +1,14 @@
-$body-color: red;
+@import "./base/index";
+@import "./theme/theme-mixin";
+@import "./theme/light";
+@import "./theme/dark";
+@import "./button/index";
+@import "./dot/index";
+@import "./code/index";
+:root  {
+  @include theme();
+}
 
 body {
-  color: $body-color;
-  color: black;
+  background-color: #373737;
 }
