@@ -1,0 +1,25 @@
+.l-badge {
+  font-size: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 2px;
+}
+
+.l-badge-red {
+  @extend .l-badge;
+  background-color: var(--l-red);
+}
+.l-badge-blue {
+  @extend .l-badge;
+  background-color: var(--l-blue);
+}
+
+.l-badge-green {
+  @extend .l-badge;
+  background-color: var(--l-green);
+}
+
+.l-badge-yellow {
+  @extend .l-badge;
+  background-color: var(--l-yellow);
+}

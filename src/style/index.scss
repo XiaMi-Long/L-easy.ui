@@ -5,7 +5,10 @@
 @import "./button/index";
 @import "./dot/index";
 @import "./code/index";
-:root  {
+@import "./badge/index";
+@import "./line/index";
+@import "./card/index";
+:root {
   @include theme();
 }
 

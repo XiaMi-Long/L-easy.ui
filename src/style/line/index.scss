@@ -1,0 +1,25 @@
+.l-line {
+  line-height: 0;
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #f6f6f4 !important;
+  clear: both;
+}
+
+.l-line-red {
+  @extend .l-line;
+  border-bottom-color: var(--l-red) !important;
+}
+.l-line-blue {
+  @extend .l-line;
+  border-bottom-color: var(--l-blue) !important;
+}
+.l-line-green {
+  @extend .l-line;
+  border-bottom-color: var(--l-green) !important;
+}
+.l-line-yellow {
+  @extend .l-line;
+  border-bottom-color: var(--l-yellow) !important;
+}

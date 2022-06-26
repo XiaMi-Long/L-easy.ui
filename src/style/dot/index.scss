@@ -1,28 +1,26 @@
-@mixin dot($b-color) {
+.l-dot {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: $b-color;
-
   display: inline-block;
 }
 
 .l-dot-red {
-  @include dot(var(--l-red));
+  @extend .l-dot;
+  background-color: var(--l-red);
 }
 
 .l-dot-blue {
-  @include dot(var(--l-blue));
+  @extend .l-dot;
+  background-color: var(--l-blue);
 }
 
 .l-dot-green {
-  @include dot(var(--l-green));
+  @extend .l-dot;
+  background-color: var(--l-green);
 }
 
 .l-dot-yellow {
-  @include dot(var(--l-yellow));
-}
-
-.l-dot-light {
-  @include dot(var(--l-light));
+  @extend .l-dot;
+  background-color: var(--l-yellow);
 }
